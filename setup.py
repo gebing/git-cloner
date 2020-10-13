@@ -14,7 +14,7 @@ def readme():
 
 
 def get_version():
-    with open(os.path.join(HERE, 'git_clone/__init__.py'), 'r') as f:
+    with open(os.path.join(HERE, 'git_cloner/__init__.py'), 'r') as f:
         content = ''.join(f.readlines())
     env = {}
     if PYTHON3:
@@ -26,9 +26,9 @@ def get_version():
 
 
 setup(
-  name='git-clone',
+  name='git-cloner',
   version=get_version(),
-  description='Batch clone projects from git server',
+  description='Batch clone projects from GitLab server',
   long_description=readme(),
   long_description_content_type='text/markdown',
   classifiers=[
