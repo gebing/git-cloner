@@ -42,14 +42,14 @@ setup(
     'Topic :: System :: Networking',
   ],
   keywords='git clone',
-  url='https://github.com/gebing/git-clone',
+  url='https://github.com/gebing/git-cloner',
   license='Apache License 2.0',
   author='gebing',
   author_email='gebing@foxmail.com',
   packages=find_packages(),
-  scripts=['git-clone'],
+  scripts=['git-cloner'],
   include_package_data=True,
-  platforms = "any",
+  platforms="any",
   install_requires=[
   ],
 )

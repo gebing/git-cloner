@@ -1,19 +1,16 @@
 # -*- coding: UTF-8 -*-
-
-# 在Python3.0测试通过
-# 需要在gitlab里面新建一个AccessToken填入gitlabToken
-
 import os
 import sys
-import time
 import json
 import shlex
 import argparse
 import subprocess
 
 if sys.version_info < (3, 0):
+  # noinspection PyUnresolvedReferences
   from urllib2 import Request, urlopen
 else:
+  # noinspection PyUnresolvedReferences
   from urllib.request import Request, urlopen
 
 
